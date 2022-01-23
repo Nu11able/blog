@@ -49,6 +49,8 @@ actionLink: /zh/guide/
 # 工具使用
 [GDB使用](Tools/GDB.md)
 
+[Git笔记](Tools/Git笔记.md)
+
 # 其它
 [各种错误汇总](other/errors.md)
 [技巧](other/Tips.md)
