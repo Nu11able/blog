@@ -46,3 +46,12 @@ git remote remove name
 ```bash
 git remote rename oldname newname
 ```
+
+# git rm
+## 删除对某个文件的跟踪
+```bash
+git rm --cached somefile
+
+# 如果是文件夹
+git rm -r --cached somefile
+```
