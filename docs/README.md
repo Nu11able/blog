@@ -49,11 +49,17 @@ actionLink: /zh/guide/
 # 工具使用
 [GDB使用](Tools/GDB.md)
 
+[cmake](Tools/cmake.md)
+
 [Git笔记](Tools/Git笔记.md)
+
+[tmux](Tools/tmux.md)
 
 # 其它
 [各种错误汇总](other/errors.md)
+
 [技巧](other/Tips.md)
+
 [程序员的自我修养](other/程序员的自我修养.md)
 
 # 系统
@@ -70,3 +76,6 @@ actionLink: /zh/guide/
 [Unix内核源码剖析](system/Unix内核源码剖析.md)
 
 [UNIX环境高级编程](system/UNIX环境高级编程.md)
+
+# UnixNetworkProgramingWithC++
+[Unix网络编程基础篇](UnixNetworkProgramingWithC++/Unix网络编程基础篇.md)
