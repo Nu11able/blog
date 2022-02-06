@@ -41,7 +41,7 @@ __attribute__(xxx)
 # MFC
 [How to convert between various string types](https://docs.microsoft.com/en-us/cpp/text/how-to-convert-between-various-string-types?view=vs-2019)
 ## CString <-> char * and CString <-> std::string
-```c++
+```cpp
 CString cstring1 = _T("hello");
 USES_CONVERSION;//don't forget this
 char* p = T2A(cstring1);

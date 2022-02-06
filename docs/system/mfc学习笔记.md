@@ -1,7 +1,7 @@
 ## tips
 
 ### 怎么获得透明画刷
-```C++
+```cpp
 CBrush* pBrush = CBrush::FromHandle((HBRUSH)GetStockObject(NULL_BRUSH));
 
 //例子：

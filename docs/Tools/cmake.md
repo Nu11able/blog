@@ -3,28 +3,28 @@
 ## cmake使用模板
 ```cmake
 #CMake的最低版本要求
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
  
 #项目名称
-PROJECT (project_name)
+project(tingx)
  
 #设置版本是 Debug 还是 Release
-SET(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_BUILD_TYPE "Debug")
  
-#设置SRC_FILE的值,指示源代码文件夹
-SET(SRC_FILE src/)
- 
+file(GLOB_RECURSE SRC_FILES ${PROJECT_SOURCE_DIR}/src/**.cc ${PROJECT_SOURCE_DIR}/src/**.hpp ${PROJECT_SOURCE_DIR}/src/**.h) 
+
 #设置包含目录
-INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/src)
+include_directories(${PROJECT_SOURCE_DIR}/src)
 
 #设置输出目录
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)
  
 #添加编译参数,比如add_definitions(-DDEBUG)将在gcc命令行添加DEBUG宏定义
 add_definitions(-g)
  
 #添加可执行文件
-ADD_EXECUTABLE(main ${SRC_FILE}/main.cc)
+add_executable(tingx ${SRC_FILES})
+add_executable(client ${PROJECT_SOURCE_DIR}/test/client.cc)
 ```
 
 
@@ -34,3 +34,7 @@ ADD_EXECUTABLE(main ${SRC_FILE}/main.cc)
 |-|-|
 |PROJECT_SOURCE_DIR|/home/name/project|
 
+## 问题汇总
+
+### cmake+vscode配置后源代码中显示头文件找不到
+在项目文件夹下.vscode中settings.json中添加行"C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools"
