@@ -26,56 +26,77 @@ actionLink: /zh/guide/
 #   details: 技术文档、教程、技巧、总结等文章
 #   link: /other
 ---
+# asm
+[asm_wangshuang.md](asm/asm_wangshuang.md)
 
 # c++
-[c++一行代码系列](c++/c++一行代码系列.md)
+[c++template基础.md](c++/c++template基础.md)
 
-[c++中explicit的作用](c++/c++中explicit的作用.md)
+[c++一行代码系列.md](c++/c++一行代码系列.md)
 
-[c++类内存分布分析](c++/c++类内存分布分析.md)
+[c++中explicit的作用.md](c++/c++中explicit的作用.md)
 
-# 汇编
-[汇编语言 王爽](asm/asm_wangshuang.md)
+[c++类内存分布分析.md](c++/c++类内存分布分析.md)
 
-# 数据结构与算法
-[红黑树](DataStructureAndAlgorithm/rb_tree.md)
+[c++错误汇总篇.md](c++/c++错误汇总篇.md)
+
+[README.md](c++/README.md)
+
+# DataStructureAndAlgorithm
+[rb_tree.md](DataStructureAndAlgorithm/rb_tree.md)
+
+# DesignPattern
+[AbstractFactory.cc](DesignPattern/AbstractFactory.cc)
+
+[FactoryMethod.cc](DesignPattern/FactoryMethod.cc)
+
+[Singleton.cc](DesignPattern/Singleton.cc)
 
 # java
-[Java核心技术 卷一 学习笔记](java/Java.md)
+[Java.md](java/Java.md)
 
-# JavaScript
-[JavaScript学习笔记](JS/JavaScript.md)
+# JS
+[JavaScript.md](JS/JavaScript.md)
 
-# 工具使用
-[GDB使用](Tools/GDB.md)
+# other
+[errors.md](other/errors.md)
 
-[cmake](Tools/cmake.md)
+[temp.c](other/temp.c)
 
-[Git笔记](Tools/Git笔记.md)
+[Tips.md](other/Tips.md)
 
-[tmux](Tools/tmux.md)
+[程序员的自我修养.md](other/程序员的自我修养.md)
 
-# 其它
-[各种错误汇总](other/errors.md)
+[计算机知识扫盲.md](other/计算机知识扫盲.md)
 
-[技巧](other/Tips.md)
+# system
+[linux内核编译.md](system/linux内核编译.md)
 
-[程序员的自我修养](other/程序员的自我修养.md)
+[linux命令使用记录.md](system/linux命令使用记录.md)
 
-# 系统
-[linux内核编译](system/linux内核编译.md)
+[linux安装php+mysql.md](system/linux安装php+mysql.md)
 
-[linux安装php+mysql](system/linux安装php+mysql.md)
+[Linux鸟哥的私房菜.md](system/Linux鸟哥的私房菜.md)
 
-[Linux鸟哥的私房菜](system/Linux鸟哥的私房菜.md)
+[mfc学习笔记.md](system/mfc学习笔记.md)
 
-[mfc学习笔记](system/mfc学习笔记.md)
+[TCP_IP网络编程.md](system/TCP_IP网络编程.md)
 
-[TCP IP网络编程](system/TCP_IP网络编程.md)
+[Unix内核源码剖析.md](system/Unix内核源码剖析.md)
 
-[Unix内核源码剖析](system/Unix内核源码剖析.md)
+[UNIX环境高级编程.md](system/UNIX环境高级编程.md)
 
-[UNIX环境高级编程](system/UNIX环境高级编程.md)
+# Tools
+[cmake.md](Tools/cmake.md)
+
+[GDB.md](Tools/GDB.md)
+
+[Git笔记.md](Tools/Git笔记.md)
+
+[tmux.md](Tools/tmux.md)
+
+[vim.md](Tools/vim.md)
 
 # UnixNetworkProgramingWithC++
-[Unix网络编程基础篇(例子)](UnixNetworkProgramingWithC++/Unix网络编程基础篇例子.md)
+[Unix网络编程基础篇例子.md](UnixNetworkProgramingWithC++/Unix网络编程基础篇例子.md)
+

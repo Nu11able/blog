@@ -13,6 +13,11 @@ set(CMAKE_BUILD_TYPE "Debug")
  
 file(GLOB_RECURSE SRC_FILES ${PROJECT_SOURCE_DIR}/src/**.cc ${PROJECT_SOURCE_DIR}/src/**.hpp ${PROJECT_SOURCE_DIR}/src/**.h) 
 
+# 移除某些文件
+file(GLOB_RECURSE MAINS src/*main.cc)
+list(REMOVE_ITEM LIBRARY ${MAINS})
+
+
 #设置包含目录
 include_directories(${PROJECT_SOURCE_DIR}/src)
 

@@ -55,3 +55,15 @@ git rm --cached somefile
 # 如果是文件夹
 git rm -r --cached somefile
 ```
+
+# 常见问题
+
+|命令|功能|
+|-|-|
+
+
+## 修复github只有新建仓库时才有小绿点贡献而commit没有
+```bash
+git filter-branch --env-filter 'GIT_AUTHOR_EMAIL="your_email@email";GIT_AUTHOR_NAME="your_name";'
+
+```
