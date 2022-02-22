@@ -1,24 +1,16 @@
 {
-  "name": "silent-coder-blog",
+  "name": "silent-coder",
   "version": "1.0.0",
-  "description": "blog of a silent coder",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "author": "reco_luan",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build ."
   },
-  "keywords": [
-    "blog"
-  ],
-  "author": "silent coder",
-  "license": "ISC",
   "devDependencies": {
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.35",
-    "@vuepress/plugin-search": "^2.0.0-beta.35",
-    "vuepress": "^2.0.0-beta.35"
+    "vuepress-theme-reco": "1.6.10"
+  },
+  "description": "blog of a silent coder",
+  "dependencies": {
+    "vuepress": "^1.9.7"
   }
 }
