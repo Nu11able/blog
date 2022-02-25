@@ -1,5 +1,6 @@
 ---
 title: Git 笔记
+date: '2022-02-26 02:03:00'
 tags:
  - tools
 categories:
@@ -68,6 +69,11 @@ git rm -r --cached somefile
 ```bash
 git reset --soft HEAD^ # 撤销一次commit
 git reset --soft HEAD~2 # 撤销两次commit
+```
+`提交完了之后发现文件名不对，或者说对某个文件做了轻微的改动`
+```bash
+git add . # 添加所有新的修改到暂存区
+git commit --amend
 ```
 
 ## 常见问题
