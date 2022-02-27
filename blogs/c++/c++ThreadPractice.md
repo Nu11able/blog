@@ -1,5 +1,5 @@
 ---
-title: c++ template基础
+title: c++ thread practice
 date: '2022-02-26 20:58:00'
 tags:
  - c++
@@ -192,4 +192,59 @@ void practice4() {
 
     cout << endl;
 }
+```
+
+
+### 5、初始value = 0, 生成十个线程，五个线程执行value += 1，五个线程执行value -= 1, 每个线程执行一百万次，如何保证value得到正确的结果
+```cpp
+void practice5() {
+    Seperator sep("practice5");
+
+    { // error
+        int value = 0;
+        vector<thread> threads;
+        for (int i = 0; i < 10; ++i) {
+            if (i < 5) {
+                threads.emplace_back([&value] { 
+                    for (int i = 0; i < 1e6; ++i)
+                        value += 1; 
+                });
+            } else {
+                threads.emplace_back([&value] {
+                    for (int i = 0; i < 1e6; ++i)
+                        value -= 1;
+                });
+            }
+        }
+        for_each(threads.begin(), threads.end(), mem_fn(&thread::join));
+        cout << "value = " << value << endl;
+    }
+
+    { // correct
+        int value = 0;
+        vector<thread> threads;
+        mutex m;
+        for (int i = 0; i < 10; ++i) {
+            if (i < 5) {
+                threads.emplace_back([&value, &m] { 
+                    for (int i = 0; i < 1e6; ++i) {
+                        lock_guard<mutex> guard(m);
+                        value += 1;
+                    }
+                });
+            } else {
+                threads.emplace_back([&value, &m] {
+                    for (int i = 0; i < 1e6; ++i) {
+                        lock_guard<mutex> guard(m);
+                        value -= 1;
+                    }
+                });
+            }
+        }
+        for_each(threads.begin(), threads.end(), mem_fn(&thread::join));
+        cout << "value = " << value << endl;
+    }
+
+}
+
 ```
