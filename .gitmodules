@@ -1,0 +1,3 @@
+[submodule "deps/vuepress-theme-reco"]
+	path = deps/vuepress-theme-reco
+	url = https://github.com/vuepress-reco/vuepress-theme-reco.git
