@@ -11,7 +11,7 @@ jobs:
     executor: runner
     steps:
       - checkout
-      - run: npm i
+      - run: npm install
       - run: npm run build 
       - persist_to_workspace:
           root: .
@@ -23,7 +23,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/blog/public
-      - checkout
       - run: 
           command: |
             ls ~/blog/public
