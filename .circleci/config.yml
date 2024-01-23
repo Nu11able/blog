@@ -1,0 +1,41 @@
+version: 2.0
+
+executors:
+  runner:
+    docker:
+      - image: cimage/node:16.20.2
+    working_directory: ~/blog
+
+jobs:
+  "build":
+    executor: runner
+    steps:
+      - checkout
+      - run: npm run build 
+      - persist_to_workspace:
+        root: .
+        paths:
+          - public
+  "deploy":
+    steps:
+      - attach_workspace:
+        at: ~/blog/public
+      - checkout
+      - run: 
+        -command: |
+          ls ~/blog/public
+          echo "---------"
+          pwd
+          cd ..
+          pwd
+      # - run: cp ~/blog/public/ . -r
+
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - "build"
+      - "deploy"
+        requires: 
+          - "build"
