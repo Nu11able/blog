@@ -3,7 +3,7 @@ version: 2.1
 executors:
   runner:
     docker:
-      - image: cimage/node:16.20.2
+      - image: cimg/node:16.20.2
     working_directory: ~/blog
 
 jobs:
