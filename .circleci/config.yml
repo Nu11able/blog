@@ -16,19 +16,19 @@ jobs:
           root: .
           paths:
             - public
-    "deploy":
-      steps:
-        - attach_workspace:
-          at: ~/blog/public
-        - checkout
-        - run: 
-          -command: |
-            ls ~/blog/public
-            echo "---------"
-            pwd
-            cd ..
-            pwd
-      # - run: cp ~/blog/public/ . -r
+  "deploy":
+    steps:
+      - attach_workspace:
+        at: ~/blog/public
+      - checkout
+      - run: 
+        -command: |
+          ls ~/blog/public
+          echo "---------"
+          pwd
+          cd ..
+          pwd
+    # - run: cp ~/blog/public/ . -r
 
 
 workflows:
