@@ -17,7 +17,7 @@ jobs:
           npm i
           npm run build
           ls -al
-          echo "${{ steps.pages.outputs.base_url }}/"
+          echo "echo:${{ steps.pages.outputs.base_url }}/ $GITHUB_WORKSPACE"
 
   test:
     needs: build
