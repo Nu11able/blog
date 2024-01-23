@@ -7,10 +7,8 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
-    "vuepress-theme-reco": "1.6.10"
+    "vuepress": "^1.9.7",
+    "vuepress-theme-reco": "^1.6.10"
   },
-  "description": "blog of a silent coder",
-  "dependencies": {
-    "vuepress": "^1.9.7"
-  }
+  "description": "blog of a silent coder"
 }
