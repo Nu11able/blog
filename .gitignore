@@ -3,5 +3,6 @@ yarn.lock
 yarn.error
 .vscode
 package-lock.json
-public
+public/*
+!public/image
 !.vuepress/public
