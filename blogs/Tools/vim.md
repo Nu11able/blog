@@ -36,6 +36,14 @@ categories:
 |p|将粘贴板的内容复制到光标后面(lowercase)
 |P|将粘贴板的内容复制到光标前面(uppercase)
 
+## 窗口分割
+|命令|功能|
+|-|-|
+|:sp [filename]|水平分割窗口|
+|:vsplit [filename]|垂直分割窗口|
+|Ctrl+w+方向键|切换到前／下／上／后一个窗格|
+|Ctrl+w+h/j/k/l|同上|
+|Ctrl+ww|依次向后切换到下一个窗格中|
 
 
 ## `组合按键命令`
