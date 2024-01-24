@@ -8,8 +8,7 @@ categories:
  - c++
 ---
 ## linux线程内存模型
-![](./image/linuxThreadModel.png)
-
+<img :src="$withBase('/image/linuxThreadModel.png')" alt="linuxThreadModel">
 
 ## practice
 
