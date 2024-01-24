@@ -5,3 +5,6 @@ yarn.error
 package-lock.json
 public
 !.vuepress/public
+.vuepress/*
+!.vuepress/config.ts
+.DS_Store
