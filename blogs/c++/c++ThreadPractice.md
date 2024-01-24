@@ -8,7 +8,7 @@ categories:
  - c++
 ---
 ## linux线程内存模型
-![linuxThreadModel](./image/linuxThreadModel.png)
+![](./image/linuxThreadModel.png)
 
 ## practice
 
